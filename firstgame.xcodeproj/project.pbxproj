@@ -15,6 +15,11 @@
 		C69A34241B0E64750095601F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69A34231B0E64750095601F /* Images.xcassets */; };
 		C69A34271B0E64750095601F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69A34251B0E64750095601F /* LaunchScreen.xib */; };
 		C69A34331B0E64750095601F /* firstgameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A34321B0E64750095601F /* firstgameTests.swift */; };
+		C69A34421B0E64FB0095601F /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = C69A343F1B0E64FB0095601F /* pew-pew-lei.caf */; };
+		C69A34431B0E64FB0095601F /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C69A34401B0E64FB0095601F /* sprites.atlas */; };
+		C69A34451B0E698A0095601F /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A34441B0E698A0095601F /* GameOverScene.swift */; };
+		C69A344C1B0E6F5C0095601F /* fruitman.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C69A344B1B0E6F5C0095601F /* fruitman.mp3 */; };
+		C69A344E1B0E72DB0095601F /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C69A344D1B0E72DB0095601F /* airhorn.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		C69A342C1B0E64750095601F /* firstgameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstgameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69A34311B0E64750095601F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69A34321B0E64750095601F /* firstgameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstgameTests.swift; sourceTree = "<group>"; };
+		C69A343F1B0E64FB0095601F /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		C69A34401B0E64FB0095601F /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		C69A34441B0E698A0095601F /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		C69A344B1B0E6F5C0095601F /* fruitman.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitman.mp3; sourceTree = "<group>"; };
+		C69A344D1B0E72DB0095601F /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 				C69A34151B0E64750095601F /* firstgame */,
 				C69A342F1B0E64750095601F /* firstgameTests */,
 				C69A34141B0E64750095601F /* Products */,
+				C69A343C1B0E64EC0095601F /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +95,7 @@
 				C69A34181B0E64750095601F /* AppDelegate.swift */,
 				C69A341A1B0E64750095601F /* GameScene.sks */,
 				C69A341C1B0E64750095601F /* GameScene.swift */,
+				C69A34441B0E698A0095601F /* GameOverScene.swift */,
 				C69A341E1B0E64750095601F /* GameViewController.swift */,
 				C69A34201B0E64750095601F /* Main.storyboard */,
 				C69A34231B0E64750095601F /* Images.xcassets */,
@@ -116,6 +128,26 @@
 				C69A34311B0E64750095601F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C69A343C1B0E64EC0095601F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C69A343D1B0E64FB0095601F /* Sounds */,
+				C69A34401B0E64FB0095601F /* sprites.atlas */,
+			);
+			name = Resources;
+			path = firstgame.xcodeproj;
+			sourceTree = "<group>";
+		};
+		C69A343D1B0E64FB0095601F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C69A344B1B0E6F5C0095601F /* fruitman.mp3 */,
+				C69A344D1B0E72DB0095601F /* airhorn.mp3 */,
+				C69A343F1B0E64FB0095601F /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +230,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69A34431B0E64FB0095601F /* sprites.atlas in Resources */,
+				C69A344C1B0E6F5C0095601F /* fruitman.mp3 in Resources */,
 				C69A34271B0E64750095601F /* LaunchScreen.xib in Resources */,
 				C69A34241B0E64750095601F /* Images.xcassets in Resources */,
+				C69A344E1B0E72DB0095601F /* airhorn.mp3 in Resources */,
 				C69A341B1B0E64750095601F /* GameScene.sks in Resources */,
 				C69A34221B0E64750095601F /* Main.storyboard in Resources */,
+				C69A34421B0E64FB0095601F /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +257,7 @@
 			files = (
 				C69A341D1B0E64750095601F /* GameScene.swift in Sources */,
 				C69A341F1B0E64750095601F /* GameViewController.swift in Sources */,
+				C69A34451B0E698A0095601F /* GameOverScene.swift in Sources */,
 				C69A34191B0E64750095601F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
